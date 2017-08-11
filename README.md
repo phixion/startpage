@@ -1,1 +1,3 @@
 minimalistic startpage using DDG, matches my i3 theme...
+
+![screenshot](https://p.hs.vc/u/I2c1e.png)
