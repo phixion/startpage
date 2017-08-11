@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Startpage</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="top-slider"></div>
+    <div id="clock"></div>
+    <input id="input" onKeyUp="search(event)" autofocus>
+    <div id="search" onClick="goToUrl()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+        	<path d="m333 315c30.9-33.4 50.2-78.2 50.2-128 0-103-84-187-188-187s-188 84.4-188 188 84.3 188 188 188c42.2 0 81-13.9 112-37.4l140 140c3.4 3.4 7.65 5.1 11.9 5.1s8.78-1.7 11.9-5.1c6.52-6.52 6.52-17.3 0-24.1l-138-140zm-292-127c0-85 68.8-154 154-154 84.7 0 154 68.8 154 154s-69 154-154 154-154-69-154-154z"/>
+        </svg>
+    </div>
+    <div id="predictions"></div>
+</body>
+</html>

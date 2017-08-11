@@ -1,0 +1,119 @@
+
+/*    Default CSS     */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+
+body {
+    margin: 0;
+    text-align: center;
+    background: #303030;
+    padding-top: 25vh;
+    font-family: Roboto;
+    font-size: 1.6rem;
+}
+    #top-slider {
+        position: absolute;
+        top: 0;
+        height: .5rem;
+        width: 100%;
+        z-index: 100;
+        transition: height .3s;
+    }
+    #clock {
+        margin-bottom: 5vh;
+        font-weight: 300;
+        font-size: 5.5rem;
+    }
+    #input {
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 1.8rem;
+        width: 40%;
+        background: #424242;
+        color: #FFFFFF;
+        margin: 0 -2.2rem;
+        border: 0;
+        height: 2.2rem;
+        line-height: 2.2rem;
+        padding: 0 .2rem;
+    }
+        #input:focus {
+             outline: 0;
+        }
+    #predictions {
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 1.8rem;
+        width: 40%;
+        margin: 0 auto;
+        background: #383838;
+        padding: 0 .2rem;
+    }
+        .prediction {
+            width: 100%;
+            height: 2.2rem;
+            line-height: 2.2rem;
+            padding: .2rem;
+            display: block;
+            color: #FFFFFF;
+            text-decoration: none;
+            transition: background .3s ease;
+            margin-left: -.2rem;
+        }
+            .prediction:hover {
+                cursor: pointer;
+                background: #343434;
+            }
+            .prediction:first-letter {
+                text-transform: uppercase;
+            }
+    
+    #search {
+        position: absolute;
+        display: inline-block;
+        width: 2.2rem;
+        height: 2.2rem;
+        cursor: pointer;
+    }
+        #search svg {
+            height: 1.8rem;
+            width: 1.8rem;
+            margin: .25rem;
+            transition: transform .3s ease;
+            fill: #424242;
+        }
+        #search svg:hover {
+            transform: rotate(90deg);
+        }
+
+@media screen and (max-width: 800px) {
+    #input,
+    #predictions {
+        width: 80%;
+    }
+}
+
+/*    Material Properties     */
+
+/* ####    REMOVE THIS LINE FOR MATERIAL DESIGN    ##### 
+
+#top-slider {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+}
+#input {
+    border-radius: 3px;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+}
+#search {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+#predictions {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+}
+    .prediction:last-child {
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
